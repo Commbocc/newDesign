@@ -23,31 +23,37 @@ body {
 	padding: 5px 0;
 }
 
+@-webkit-keyframes jumboImage {
+	0%     {background-position: center top;}
+	50%    {background-position: center center;}
+	100%   {background-position: center top;}
+}
+@keyframes jumboImage {
+	0%     {background-position: center top;}
+	50%    {background-position: center center;}
+	100%   {background-position: center top;}
+}
+
 #homeJumboBG {
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	-webkit-animation-name: jumboImage;
-	-webkit-animation-duration: 25s; 
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
 	animation-name: jumboImage;
-	animation-duration: 25s;
-    animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
-}
-/* Chrome, Safari, Opera */
-@-webkit-keyframes jumboImage {
-	0%     {background-position: center top;}
-	50%    {background-position: center center;}
-	100%   {background-position: center top;}
-}
-/* Standard syntax */
-@keyframes jumboImage {
-	0%     {background-position: center top;}
-	50%    {background-position: center center;}
-	100%   {background-position: center top;}
+
+	@media (min-width: $screen-md-min) {
+		-webkit-animation-duration: 20s; 
+		animation-duration: 20s;
+	}
+	@media (min-width: $screen-lg-min) {
+		-webkit-animation-duration: 25s; 
+		animation-duration: 25s;
+	}
 }
 
 #homeJumbo {
