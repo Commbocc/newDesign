@@ -1,5 +1,15 @@
-<div class="announcements" {%if page.path == 'index.html'%}style="margin-top: -30px;"{%endif%}>
-	<div class="alert alert-warning alert-dismissible fade in" role="alert">
+<noscript>
+	<div class="alert alert-danger" {%if page.path == 'index.html'%}style="margin-top: -30px;"{%endif%}>
+		<div class="container">
+			<h4 class="text-center">Our Site works best with JavaScript enabled</h4>
+		</div>
+	</div>
+</noscript>
+
+
+{% if true %}
+<div class="announcements">
+	<div class="alert alert-warning alert-dismissible fade in" role="alert" {%if page.path == 'index.html'%}style="margin-top: -30px;"{%endif%}>
 		<div class="container">
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
 			<h4 id="oh-snap!-you-got-an-error!">Important Announcement<a class="anchorjs-link" href="#oh-snap!-you-got-an-error!"><span class="anchorjs-icon"></span></a></h4>
@@ -9,3 +19,4 @@
 		</div>
 	</div>
 </div>
+{% endif %}
