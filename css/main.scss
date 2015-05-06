@@ -1,0 +1,186 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+@import "font-awesome";
+
+@import "bootswatch/yeti_hc/variables";
+@import "bootstrap";
+@import "bootswatch/yeti_hc/bootswatch";
+
+body {
+	// background: #f1f1f1;
+}
+
+#navBar {
+	margin-bottom: 0;
+}
+
+#navPills {
+	// margin: 5px 0;
+	padding: 5px 0;
+}
+
+#homeJumboBG {
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	-webkit-animation-name: jumboImage;
+	-webkit-animation-duration: 25s; 
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: jumboImage;
+	animation-duration: 25s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes jumboImage {
+	0%     {background-position: center top;}
+	50%    {background-position: center center;}
+	100%   {background-position: center top;}
+}
+/* Standard syntax */
+@keyframes jumboImage {
+	0%     {background-position: center top;}
+	50%    {background-position: center center;}
+	100%   {background-position: center top;}
+}
+
+#homeJumbo {
+
+	background: $brand-primary;
+	background: -moz-linear-gradient(top,  rgba(69,114,167,1) 0%, rgba(69,114,167,1) 20%, rgba(69,114,167,0.55) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69,114,167,1)), color-stop(20%,rgba(69,114,167,1)), color-stop(100%,rgba(69,114,167,0.55))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(69,114,167,1) 0%,rgba(69,114,167,1) 20%,rgba(69,114,167,0.55) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(69,114,167,1) 0%,rgba(69,114,167,1) 20%,rgba(69,114,167,0.55) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(69,114,167,1) 0%,rgba(69,114,167,1) 20%,rgba(69,114,167,0.55) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(69,114,167,1) 0%,rgba(69,114,167,1) 20%,rgba(69,114,167,0.55) 100%); /* W3C */
+
+	color: #fff;
+
+}
+
+#announcements {
+
+}
+
+section.well {
+	margin-top: 30px;
+}
+
+.category { h4 { font-weight: bold; } }
+
+
+#homeJumbo {
+	#popular {
+		a {
+			color: #fff;
+		}
+	}
+}
+
+// all but xs
+@media (min-width: $screen-sm-min) {
+
+	.hoverUp {
+		// -webkit-transition-property: margin-top;
+		-webkit-transition-duration: 0.5s;
+		.caption {
+			-webkit-transition-duration: 0.5s;
+		}
+		&:hover {
+			margin-top: -5px;
+			padding-right: 0;
+			padding-left: 0;
+			.caption {
+				padding: 0 15px;
+			}
+		}
+	}
+
+	#homeJumbo {
+		.container > .row { position: relative; }
+
+		#personal {
+			position: absolute;
+			right: 0;
+			bottom: -48px;
+		}
+		
+		
+		#popular {
+			background: #333;
+			padding-bottom: 48px;
+			// padding: 10px 10px 48px 10px;
+			// padding-right: -15px;
+		}
+	}
+
+	.navbar-vertical {
+		&.navbar
+		{
+			max-width:300px;
+			margin-right: 0;
+			margin-left: 0;
+			padding-bottom: 10px;
+		}
+		.navbar-collapse {
+			height: auto;
+			border-top: 0;
+			box-shadow: none;
+			max-height: none;
+			padding-left:0;
+			padding-right:0;
+		}
+		.navbar-collapse.collapse {
+			display: block !important;
+			width: auto !important;
+			padding-bottom: 0;
+			overflow: visible !important;
+		}
+		.navbar-collapse.in {
+			overflow-x: visible;
+		}
+
+		.navbar-nav,
+		.navbar-nav > li,
+		.navbar-left,
+		.navbar-right,
+		.navbar-header
+		{float:none !important;}
+
+		.navbar-right .dropdown-menu {left:0;right:auto;}
+		.navbar-collapse .navbar-nav.navbar-right:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	.category {
+		height: 85px;
+		max-height: 85px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	footer {
+		nav {
+			text-align: right !important;
+		}
+	}
+}
+
+// news images
+.media-list.news .media-object { width: 96px; max-width: 64px; }
+@media (min-width: 768px) {
+	.media-list.news .media-object { max-width: 96px; }
+}
+
+// logo
+// #logo{margin-bottom: 15px;}
+// @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { #logo{margin-top: 125px;} }
+// @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { #logo{margin-top: 90px;} }
+// @media (min-width: $screen-lg-min) { #logo{margin-top: 70px;} }

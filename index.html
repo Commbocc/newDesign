@@ -1,0 +1,144 @@
+---
+layout: default
+---
+
+<section id="homeJumboBG" style="background-image: url('http://drivethenation.com/wp-content/uploads/2015/02/Tampa-Downtown-Skyline.jpg')">
+<div class="jumbotron" id="homeJumbo">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7">
+
+				<h1>Hillsborough County Government</h1>
+				<p>
+					The best place to find government services and information<br>
+					<strong>Simpler, clearer, faster</strong>
+				</p>
+
+				<p>
+					<div class="input-group input-group-lg">
+						<input type="text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+							<button class="btn btn-info" type="button">
+								<i class="fa fa-fw fa-search"></i>
+							</button>
+						</span>
+					</div>
+				</p>
+			</div>
+			<div id="personal" class="col-sm-5">
+
+				<div class="row">
+					<div class="col-xs-12">
+						<!--  -->
+					</div>
+					<div class="col-xs-12" id="popular">
+						<h4>Popular on HillsboroughCounty.org</h4>
+						<div class="row">
+							<div class="col-sm-12">
+								<ul class="list-unstyled">
+									<li><a href="#">Building Permits</a></li>
+									<li><a href="#">Pet Resources</a></li>
+									<li><a href="#">Pay Online</a></li>
+									<li><a href="#">Find a Job</a></li>
+									<li><a href="#">Parks</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+{% include flash.html %}
+
+<section class="container">
+	<div class="row">
+		{% for service in site.data.services %}
+		<div class="col-sm-4 category">
+			<h4>
+				<a href="#">{{service.text}}</a>
+			</h4>
+			<p>{{service.excerpt}}</p>
+		</div>
+		{% endfor %}
+	</div>	
+</section>
+
+<section class="well">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-4 hoverUp">
+				<a href="{% post_url 2015-04-23-2015-hillsborough-hackathon %}">
+					<img src="/images/application.png" alt="Abstract Image of Mobile Phone Application" class="img-responsive">
+				</a>
+				<div class="caption">
+					<h3>Elections</h3>
+					<p class="lead auto-height">
+						Do you have a strong interest in the design and development of engaging user experiences?
+					</p>
+					<p class="text-right">
+						<a href="{% post_url 2015-04-23-2015-hillsborough-hackathon %}" class="">More Info</a>
+					</p>
+				</div>
+			</div>
+			<hr class="visible-xs">
+			<div class="col-sm-4 hoverUp">
+				<a href="{% post_url 2015-04-23-2015-hillsborough-hackathon %}">
+					<img src="/images/code.png" alt="Abstract Image of Computer Code" class="img-responsive">
+				</a>
+				<div class="caption">
+					<h3>Taxes</h3>
+					<p class="lead auto-height">
+						Do you enjoy creating while following design and implementation principles?
+					</p>
+					<p class="text-right">
+						<a href="{% post_url 2015-04-23-2015-hillsborough-hackathon %}" class="">More Info</a>
+					</p>
+				</div>
+			</div>
+			<hr class="visible-xs">
+			<div class="col-sm-4 hoverUp">
+				<a href="{% post_url 2015-04-23-2015-hillsborough-hackathon %}">
+					<img src="/images/circuit-board.png" alt="Abstract Image of a Computer Motherboard" class="img-responsive">
+				</a>
+				<div class="caption">
+					<h3>Find a Job</h3>
+					<p class="lead auto-height">
+						Do you find yourself solving problems by manipulating computer code?
+					</p>
+					<p class="text-right">
+						<a href="{% post_url 2015-04-23-2015-hillsborough-hackathon %}" class="">More Info</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="container">
+	<h2>Lorem ipsum doalr sit amit</h2>
+	<div class="row">
+		<div class="col-sm-8">
+			<p class="lead">
+				lead things
+			</p>
+			{% for department in site.departments %}
+
+			<a href="{{department.url}}">{{department.title}}</a><br>
+
+			{% endfor %}
+		</div>
+		<div class="col-sm-4 lead">
+			<div class="panel panel-info">
+				<div class="panel-body">
+					info things
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>

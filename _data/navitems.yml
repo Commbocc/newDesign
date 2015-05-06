@@ -1,0 +1,7 @@
+- text: Home
+  href: /
+- text: News
+  href: /news
+- text: Register
+  href: "!EVENTBRITE!"
+  target: _blank
