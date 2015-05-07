@@ -51,7 +51,7 @@ body {
 		animation-duration: 20s;
 	}
 	@media (min-width: $screen-lg-min) {
-		-webkit-animation-duration: 25s; 
+		-webkit-animation-duration: 25s;
 		animation-duration: 25s;
 	}
 }
@@ -95,8 +95,10 @@ section.well {
 	.hoverUp {
 		// -webkit-transition-property: margin-top;
 		-webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
 		.caption {
 			-webkit-transition-duration: 0.5s;
+			transition-duration: 0.5s;
 		}
 		&:hover {
 			margin-top: -5px;

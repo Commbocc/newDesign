@@ -1,0 +1,111 @@
+---
+layout: default
+---
+
+<style type="text/css">
+	#sidebar {
+		height: 100%;
+		padding-right: 0;
+	}
+	#sidebar .nav {
+		width: 95%;
+	}
+	#sidebar li {
+		border:0 #f2f2f2 solid;
+		border-bottom-width:1px;
+	}
+
+	/* collapsed sidebar styles */
+	@media screen and (max-width: 767px) {
+		.row-offcanvas {
+			position: relative;
+			left: 0;
+			-webkit-transition-property: min-height, left;
+			transition-property: min-height, left;
+			-webkit-transition-duration: 0.5s;
+			transition-duration: 0.5s;
+		}
+		.row-offcanvas-right
+		.sidebar-offcanvas {
+			right: -41.6%;
+		}
+
+		.row-offcanvas-left
+		.sidebar-offcanvas {
+			left: -41.6%;
+		}
+		.row-offcanvas-right.active {
+			right: 41.6%;
+		}
+		.row-offcanvas-left.active {
+			left: 41.6%;
+		}
+		.sidebar-offcanvas {
+			position: absolute;
+			top: 0;
+			width: 41.6%;
+		}
+		#sidebar {
+			padding-top:0;
+		}
+	}
+</style>
+
+
+
+<div class="container">
+
+
+	<header class="page-header">
+		<h1>{{page.title}}</h1>
+	</header>
+
+	<div class="row row-offcanvas row-offcanvas-left">
+
+		<!-- sidebar -->
+		<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+			<ul class="nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 3 sljkn</a></li>
+				<li><a href="#">Link 3s wsf sdf wfv</a></li>
+				<li><a href="#">Link 3 wdf w wef</a></li>
+				<li><a href="#">Link 3 wef</a></li>
+				<li><a href="#">Link 3 wtthy</a></li>
+			</ul>
+		</div>
+
+		<div class="col-xs-2 visible-xs text-center">
+			<button data-toggle="offcanvas" data-target="#sidebar">
+				<i class="fa fa-fw fa-bars"></i>
+			</button>
+		</div>
+
+		<!-- main area -->
+		<div class="col-xs-10 col-sm-9">
+			{{content}}
+		</div><!-- /.col-xs-12 main -->
+	</div><!--/.row-->
+
+
+
+
+
+
+
+<!-- 
+	<div class="row">
+
+		<section class="col-sm-7 col-md-8">
+			{{content}}
+		</section>
+
+		<aside class="col-sm-5 col-md-4">
+			{% include sidebar.html %}
+		</aside>
+
+	</div> -->
+
+</div>

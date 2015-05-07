@@ -9,3 +9,14 @@ $ ->
 	nowTime = new Date
 	$(".btn-register").each ->
 		$(this).removeClass 'disabled' if nowTime < eventExpire
+
+	$('[data-toggle=offcanvas]').click ->
+		$row = $('.row-offcanvas')
+		height = $('.row-offcanvas .sidebar-offcanvas .nav').height()
+		$row.toggleClass 'active'
+		if $row.hasClass 'active'
+			$row.css('min-height', height+'px')
+		else
+			$row.css('min-height', '0px')
+
+		return
