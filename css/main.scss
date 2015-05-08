@@ -3,7 +3,6 @@
 ---
 @charset "utf-8";
 
-
 @import "font-awesome";
 
 @import "bootswatch/yeti_hc/variables";
@@ -93,19 +92,22 @@ section.well {
 @media (min-width: $screen-sm-min) {
 
 	.hoverUp {
-		// -webkit-transition-property: margin-top;
+		-webkit-transition-property: margin-top;
 		-webkit-transition-duration: 0.5s;
 		transition-duration: 0.5s;
-		.caption {
+		&:hover {
+			margin-top: -5px;
+		}
+	}
+
+	.scaleUp {
+		img {
 			-webkit-transition-duration: 0.5s;
 			transition-duration: 0.5s;
 		}
 		&:hover {
-			margin-top: -5px;
-			padding-right: 0;
-			padding-left: 0;
-			.caption {
-				padding: 0 15px;
+			img {
+				transform: scale(1.1);
 			}
 		}
 	}
@@ -126,6 +128,7 @@ section.well {
 			// padding: 10px 10px 48px 10px;
 			// padding-right: -15px;
 		}
+
 	}
 
 	.navbar-vertical {

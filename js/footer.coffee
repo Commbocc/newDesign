@@ -12,8 +12,9 @@ $ ->
 
 	$('[data-toggle=offcanvas]').click ->
 		$row = $('.row-offcanvas')
-		height = $('.row-offcanvas .sidebar-offcanvas .nav').height()
+		height = $('.row-offcanvas .sidebar-offcanvas .list-group').height()
 		$row.toggleClass 'active'
+		$(this).toggleClass 'active'
 		if $row.hasClass 'active'
 			$row.css('min-height', height+'px')
 		else
