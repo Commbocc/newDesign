@@ -12,14 +12,14 @@ layout: default
 	<ul class="nav nav-tabs visible-xs">
 		<li role="presentation">
 			<a class="toggle" data-toggle="offcanvas" data-target="#sidebar">
-				List Title <i class="fa fa-fw fa-chevron-right"></i>
+				List Titles <i class="fa fa-fw fa-chevron-right"></i>
 			</a>
 		</li>
 	</ul>
 
 	<div class="row row-offcanvas">
 
-		<section class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3">
+		<section class="col-sm-8 col-md-9 {%if page.sideleft%}col-sm-push-4 col-md-push-3{%endif%}">
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<h2>Subheading</h2>
@@ -28,7 +28,7 @@ layout: default
 			</div>
 		</section>
 
-		<aside class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 xs-static">
+		<aside class="col-sm-4 col-md-3 xs-static {%if page.sideleft%}col-sm-pull-8 col-md-pull-9{%endif%}">
 
 			<div class="panel panel-default sidebar-offcanvas" role="navigation">
 				<div class="panel-heading hidden-xs">
@@ -51,7 +51,7 @@ layout: default
 				<div class="panel-heading">
 					<h3 class="panel-title">Panel Title</h3>
 				</div>
-				<img src="http://www.freevectors.me/wp-content/uploads/2013/07/abstract-circle-colorful-banner-600.jpg" class="img-responsive">
+				<img src="http://www.ospreyobserver.com/wp-content/uploads/2015/02/HILLSBOROUGH.jpg" class="img-responsive">
 			</div>
 
 		</aside>
@@ -59,46 +59,3 @@ layout: default
 	</div>
 
 </div>
-
-
-
-
-<style type="text/css">
-
-	.toggle i {
-		-webkit-transition-duration: 0.5s;
-		transition-duration: 0.5s;
-		-webkit-transform: rotateY(0deg);
-		transform: rotateY(0deg);
-	}
-	.toggle.active i {
-		-webkit-transform: rotateY(180deg);
-		transform: rotateY(180deg);
-	}
-
-	@media screen and (max-width: 767px) {
-		.row-offcanvas {
-			position: relative;
-			left: 0;
-			-webkit-transition-property: min-height, left;
-			transition-property: min-height, left;
-			-webkit-transition-duration: 0.5s;
-			transition-duration: 0.5s;
-		}
-		.row-offcanvas.active {
-			left: 75%;
-			top: 0;
-			margin-left: 7px;
-		}
-		.xs-static {
-			position: static;
-		}
-		.sidebar-offcanvas {
-			position: absolute;
-			left: -75%;
-			top: 0;
-			width: 75%;
-		}
-	}
-
-</style>
