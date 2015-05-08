@@ -11,7 +11,7 @@ layout: default
 
 	<ul class="nav nav-tabs visible-xs">
 		<li role="presentation">
-			<a href="#" class="toggle" data-toggle="offcanvas" data-target="#sidebar">
+			<a class="toggle" data-toggle="offcanvas" data-target="#sidebar">
 				List Title <i class="fa fa-fw fa-chevron-right"></i>
 			</a>
 		</li>
@@ -68,9 +68,11 @@ layout: default
 	.toggle i {
 		-webkit-transition-duration: 0.5s;
 		transition-duration: 0.5s;
+		-webkit-transform: rotateY(0deg);
 		transform: rotateY(0deg);
 	}
 	.toggle.active i {
+		-webkit-transform: rotateY(180deg);
 		transform: rotateY(180deg);
 	}
 
