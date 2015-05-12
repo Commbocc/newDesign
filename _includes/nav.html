@@ -52,18 +52,22 @@
 			<li class="expand">
 				<a href="#{{tab.name}}">{{tab.name}}</a>
 				<div class="sections">
-
-					<div class="container masonry">
-						{% for section in tab.sections %}
-						<div class="tile">
-							<h4>{{section.name}}</h4>
-							<ul class="list-unstyled">
-								{% for service in section.services %}
-								<li><a href="{{site.baseurl}}/services/a-service/">{{service.name}}</a></li>
-								{% endfor %}
-							</ul>
+					<div class="container">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<div class="masonry">
+							{% for section in tab.sections %}
+							<div class="tile">
+								<h4>{{section.name}}</h4>
+								<ul class="list-unstyled">
+									{% for service in section.services %}
+									<li><a href="{{site.baseurl}}/services/a-service/">{{service.name}}</a></li>
+									{% endfor %}
+								</ul>
+							</div>
+							{% endfor %}
 						</div>
-						{% endfor %}
 					</div>
 
 				</div>
