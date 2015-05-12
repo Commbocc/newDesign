@@ -21,3 +21,11 @@ $ ->
 			$row.css('min-height', '0px')
 
 		return
+
+	# windowsize = $(window).width()
+	# if (windowsize > 767) 
+	# 	$('#superNav .nav-pills > li > a').hover ->
+	# 		$(this).tab 'show'
+	# 		return
+
+	return

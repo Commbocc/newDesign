@@ -2,7 +2,7 @@
 js:
     - src: footer
     - src: autoheight
-    - src: jquery.freetile.min
+    - src: columnizer.min
     - src: highcharts/highcharts
     - src: highcharts/modules/data
 

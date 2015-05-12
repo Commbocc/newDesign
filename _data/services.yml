@@ -1,52 +1,156 @@
-- text: Art
-  excerpt: 'lorem ipsum'
-- text: County Projects
-  excerpt: 'lorem ipsum'
-- text: County Calendar
-  excerpt: 'lorem ipsum'
-- text: Code Violations
-  excerpt: 'lorem ipsum'
-- text: FAQs
-  excerpt: 'lorem ipsum'
-- text: Flood Maps
-  excerpt: 'lorem ipsum'
-- text: E-Services
-  excerpt: 'lorem ipsum'
-- text: Find Parks & Preserves
-  excerpt: 'lorem ipsum'
-- text: Green Hillsborough
-  excerpt: 'lorem ipsum'
-- text: Head Start Program
-  excerpt: 'lorem ipsum'
-- text: HELP and Domestic Partnership Registry
-  excerpt: 'lorem ipsum'
-- text: GIS
-  excerpt: 'lorem ipsum'
-- text: Job Opportunities
-  excerpt: 'lorem ipsum'
-- text: Mosquito Control
-  excerpt: 'lorem ipsum'
-- text: News & Announcements
-  excerpt: 'lorem ipsum'
-- text: Pay Online
-  excerpt: 'lorem ipsum'
-- text: Permits & Licenses
-  excerpt: 'lorem ipsum'
-- text: Pets & Animals
-  excerpt: 'lorem ipsum'
-- text: Photo Gallery
-  excerpt: 'lorem ipsum'
-- text: Publications
-  excerpt: 'lorem ipsum'
-- text: Social Services
-  excerpt: 'lorem ipsum'
-- text: Staff Directory
-  excerpt: 'lorem ipsum'
-- text: Trash / Garbage
-  excerpt: 'lorem ipsum'
-- text: Veteran's Services
-  excerpt: 'lorem ipsum'
-- text: Voting
-  excerpt: 'lorem ipsum'
-- text: Water & Sewer
-  excerpt: 'lorem ipsum'
+- name: live
+  sections:
+    - name: Household
+      services:
+        - name: Flood Zone
+        - name: Flood Zone
+        - name: Flood Zone
+        - name: Flood Zone
+    - name: Neighborhood
+      services:
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+    - name: Health
+      services:
+        - name: NRO
+        - name: NRO
+        - name: NRO
+    - name: Public Safety
+      services:
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+    - name: Recreation & Leisure
+      services:
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+    - name: Environment
+      services:
+        - name: NRO
+        - name: NRO
+        - name: NRO
+    - name: Transportation
+      services:
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+    - name: County Information
+      services:
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+    - name: Departments
+      services:
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+        - name: NRO
+    - name: Emergency Information
+      services:
+        - name: NRO
+        - name: NRO
+    - name: Online Payments
+      services:
+        - name: NRO
+        - name: NRO
+
+- name: business
+  sections:
+    - name: Doing Business
+      services:
+        - name: NRO
+    - name: Starting A Business
+      services:
+        - name: NRO
+    - name: Small Businesses
+      services:
+        - name: NRO
+    - name: Eveent Planning
+      services:
+        - name: NRO
+    - name: Nonprofits
+      services:
+        - name: NRO
+
+- name: development
+  sections:
+    - name: Development & Consulting
+      services:
+        - name: NRO
+    - name: Permits
+      services:
+        - name: NRO
+    - name: Inspections
+      services:
+        - name: NRO
+    - name: Neighborhoods
+      services:
+        - name: NRO
+    - name: Planning
+      services:
+        - name: NRO
+    - name: The Center
+      services:
+        - name: NRO
+    - name: Research Permits & Cases
+      services:
+        - name: NRO
+
+- name: government
+  sections:
+    - name: Board of County Commissioners
+      services:
+        - name: NRO
+    - name: County Administrator
+      services:
+        - name: NRO
+    - name: Departments
+      services:
+        - name: NRO
+    - name: Public Records
+      services:
+        - name: NRO
+    - name: Jobs
+      services:
+        - name: NRO
+    - name: County Center
+      services:
+        - name: NRO
+    - name: Locations
+      services:
+        - name: NRO
+    - name: Codes & Ordinances
+      services:
+        - name: NRO
+
+- name: visit
+  sections:
+    - name: Activities
+      services:
+        - name: NRO
+    - name: Attractions & Events
+      services:
+        - name: NRO
+    - name: Information & Resources
+      services:
+        - name: NRO

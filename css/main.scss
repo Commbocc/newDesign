@@ -9,6 +9,11 @@
 @import "bootstrap";
 @import "bootswatch/yeti_hc/bootswatch";
 
+
+// assets
+@import "assets/super_nav";
+
+
 body {
 	// background: #f1f1f1;
 }
@@ -67,6 +72,11 @@ body {
 
 	color: #fff;
 
+	.nav li a {
+		background: #fff;
+		margin: 1px 5px;
+	}
+
 }
 
 #announcements {
@@ -93,6 +103,7 @@ section.well {
 
 	.hoverUp {
 		-webkit-transition-property: margin-top;
+		transition-property: margin-top;
 		-webkit-transition-duration: 0.5s;
 		transition-duration: 0.5s;
 		&:hover {
