@@ -14,6 +14,8 @@
 #superNav {
 
 	position: relative;
+	border-bottom: solid 1px #eee;
+
 
 	.tile:first-of-type h4 {
 		margin-top: 0;
@@ -49,9 +51,10 @@
 
 	#superNav {
 
-		.sections {
+		.sections, .expand:not(:focus) .sections {
 			display: block;
 			
+			-webkit-transform-origin: 50% 0;
 			transform-origin: 50% 0;
 
 			-webkit-transform: perspective(12000px) rotateX(-90deg);
