@@ -13,6 +13,12 @@
 
 #superNav {
 
+	.expand i.fa-arrow-down {
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		color: $brand-info;
+	}
+
 	position: relative;
 	border-bottom: solid 1px #eee;
 
@@ -50,6 +56,13 @@
 		.sections {
 			display: block;
 			// left: 50%;
+		}
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+	.expand:hover, .expand:focus {
+		.sections {
 			top: 0;
 		}
 	}
